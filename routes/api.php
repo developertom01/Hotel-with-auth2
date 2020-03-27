@@ -24,3 +24,7 @@ Route::get('/rooms/{id}','RoomController@show')->name('tasks.show');
 Route::put('/rooms/{id}','RoomController@update')->name('task.update');
 Route::delete('/rooms/{id}','RoomController@delete')->name('task.delete');
 
+///Passport routes
+
+Route::Post('/register', 'Api\AuthController@register');
+Route::Post('/login', 'Api\AuthController@login');
